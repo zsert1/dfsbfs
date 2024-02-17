@@ -17,7 +17,9 @@ def bfs():
             print(dist[nx], " dist[nx]")
             # 방
             if 0 <= nx <= MAX and not dist[nx]:
-                dist[nx] = dist[x] + 1
+                dist[nx] = (
+                    dist[x] + 1
+                )  # dist[4,6,10]은 다 1을 가지게 된다. => 이를 노드로 보면 뻗어나가는 것 확인하고 이를 통해 언제 k랑 같아지는지 확인 가능하다
                 q.append(nx)
 
 
