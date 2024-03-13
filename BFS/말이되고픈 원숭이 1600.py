@@ -17,7 +17,7 @@ def bfs():
         x, y, k, move = queue.popleft()
         if x == H - 1 and y == W - 1:
             return move
-
+        # 말처럼 이동 가능한 횟수(K)가 0보다 크면 말처럼 이동
         if k:
             for i in range(8):
                 nx = x + dhx[i]
